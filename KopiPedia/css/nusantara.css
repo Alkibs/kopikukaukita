@@ -42,31 +42,64 @@ a {
 }
 .container_header_jumbotron {
     width: 100%;
-    height: 110vh;
+    height: 75vh;
     margin-top: 2%;
     padding: 0 5%;
     position: relative;
+    margin-top: 5%;
 }
 .container_header_jumbotron .container_jumbotron {
     width: 100%;
     height: 75vh;
-    background-color: grey;
 }
-.container_header_jumbotron .container_card_jumbotron {
+.container_header_jumbotron .container_jumbotron img {
     width: 100%;
-    height: 45vh;
+}
+.carousel_container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+   overflow: hidden;
+}
+.carousel_container .carousel_slider {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    position: absolute;
-    left: 0;
-    top: 55%;
     
 }
-.container_header_jumbotron .container_card_jumbotron .card {
-    width: 20vw;
-    height: 45vh;
-    background-color:white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.carousel_container i {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: grey;
+    box-sizing: border-box;
+}
+#nextBtn {
+    top: 50%;
+    right: 3%;
+}
+#prevBtn {
+    top: 50%;
+    left: 3%;
+}
+.carousel_container .carousel_slider .img {
+    min-width: 100%;
+    background-color: gainsboro;
+    position: relative;
+}
+.carousel_container .carousel_slider .img h2 {
+    position: absolute;
+    top:75%;
+    left: 5%;
+    color:black;
+}
+.carousel_container .carousel_slider .img img{
+    display: block;
+    width: 100%;
+    height: 75vh;
 }
 .container_content {
     width: 100%;
@@ -78,33 +111,8 @@ a {
     width: 100%;
     height: auto;
     text-align: center;
+    margin-bottom: 5%;
 }
-.container_content .container_box_content {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:5%;
-}
-.container_content .container_box_content .box {
-    width: 50%;
-    height: 35vh;
-    
-}
-.container_content .container_box_content .one {
-    background-color: gray;
-}
-.container_content .container_box_content .two {
-    background-color:#9e9c9c;
-}
-.container_content .container_box_content .three {
-    background-color: #9e9c9c;
-}
-.container_content .container_box_content .four {
-    background-color: grey;
-}
-
-
 .container_content .container_both_content {
     width: 100%;
     height: auto;
@@ -148,73 +156,8 @@ a {
     box-sizing: border-box;
     margin-bottom: 10%;
 }
-.container_hubkami {
-    width: 100%;
-    height: 50vh;
-    background-color: #9e9c9c;
-    display: flex;
-}
-.container_hubkami .container_image {
-    width: 40%;
-    height: 50vh;
-}
-.container_hubkami img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.container_hubkami .container_desc {
-    width: 60%;
-    height: 100%;
-    padding: 3%;
-    box-sizing: border-box;
-}
-.carousel_container {
-    width: 90%;
-    height: auto;
-    margin: 2% auto;
-    padding-bottom: 2%;
-    position: relative;
-    overflow: hidden;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-}
-.carousel_container i {
-    position: absolute;
-    z-index: 1;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    background-color: gray;
-    padding: 1%;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-#nextBtn {
-    top: 55%;
-    right: 0%;
-}
-#prevBtn {
-    top: 55%;
-}
-.carousel_container .carousel_slider {
-    width: 100%;
-    display: flex;
-    margin-top: 5%;
-}
-.carousel_slider .img {
-    min-width: 100%;
-    height:auto;
-    display: flex;
-    justify-content: space-around;
-}
-.carousel_slider .img .content {
-    width: 20%;
-    height: 35vh;
-    background-color: grey;
-}
 .container_footer {
     width: 100%;
     height: 15vh;
     background-color: gainsboro;
-    margin-top: 5%;
 }
