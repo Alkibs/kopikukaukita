@@ -251,8 +251,8 @@ a {
     }
     
     .container_menu img {
-        width: 30vw;
-        height: 10vh;
+        width: 32vw;
+        height: 8vh;
     }
     .container_secondary_menu {
         width: 100%;
@@ -328,11 +328,11 @@ a {
         color: grey;
     }
     #nextBtn {
-        top: 50%;
+        top: 55%;
         right: 3%;
     }
     #prevBtn {
-        top: 50%;
+        top: 55%;
         left: 3%;
     }
     .carousel_container .carousel_slider {
