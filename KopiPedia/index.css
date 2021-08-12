@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d05 ;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container_menu {
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0;
+    box-sizing: border-box;
+}
+.container_menu img {
+    display: block;
+    width: 20vw;
+    height: 15vh;
+}
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    display: none;
+}
+.container_secondary_menu {
+    width: 100%;
+}
+.container_secondary_menu div{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.container_secondary_menu a {
+    width: 100%;
+    height: 7vh;
+    line-height: 7vh;
+    transition: 0.2s;
+}
+.container_secondary_menu a:hover {
+    background-color: grey;
+    transition: 0.3s;
+}
+.container_header_jumbotron {
+    width: 100%;
+    height: 110vh;
+    margin-top: 2%;
+    padding: 0 5%;
+    position: relative;
+}
+.container_header_jumbotron .container_jumbotron {
+    width: 100%;
+    height: 75vh;
+    background-color: grey;
+}
+.container_header_jumbotron .container_card_jumbotron {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    
+}
+.container_header_jumbotron .container_card_jumbotron .card {
+    width: 20vw;
+    height: 45vh;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container_content {
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+    margin-top: 2%;
+}
+.container_content .container_kopikukaukita {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.container_content .container_box_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:5%;
+}
+.container_content .container_box_content .box {
+    width: 50%;
+    height: 35vh;
+    
+}
+.container_content .container_box_content .one {
+    background-color: gray;
+}
+.container_content .container_box_content .two {
+    background-color:#9e9c9c;
+}
+.container_content .container_box_content .three {
+    background-color: #9e9c9c;
+}
+.container_content .container_box_content .four {
+    background-color: grey;
+}
+
+
+.container_content .container_both_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 5%;
+}.container_both_content img {
+    display: block;
+    width: 250px ;
+    height: 250px;
+}
+.container_both_content .container_left_content {
+    width: 75%;
+    height: auto;
+    /* background-color: #2d2d2d05; */
+}
+.container_both_content .container_right_content {
+    width: 25%;
+    height: auto;
+    /* background-color: red; */
+}
+.container_left_content .content {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.container_left_content .content .desc_content_1 {
+    display: flex;
+    justify-content: space-between;
+}
+.container_left_content .content .desc_content_1 p {
+    padding: 0 3%;
+    box-sizing: border-box;
+}
+
+.container_both_content .container_right_content .right_content {
+    width: 100%;
+    height: auto;
+    background-color:#dcdcdc3b;
+    padding: 3% 3%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+.container_hubkami {
+    width: 100%;
+    height: 50vh;
+    background-color: #9e9c9c;
+    display: flex;
+}
+.container_hubkami .container_image {
+    width: 40%;
+    height: 50vh;
+}
+.container_hubkami img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.container_hubkami .container_desc {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+}
+.carousel_container {
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    padding-bottom: 2%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.carousel_container i {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: gray;
+    padding: 1%;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#nextBtn {
+    top: 55%;
+    right: 0%;
+}
+#prevBtn {
+    top: 55%;
+}
+.carousel_container .carousel_slider {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+.carousel_slider .img {
+    min-width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+}
+.carousel_slider .img .content {
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+.carousel_slider .img .content img {
+    width: 100%;
+}
+.container_footer {
+    width: 100%;
+    height: 15vh;
+    background-color: gainsboro;
+    margin-top: 5%;
+}
+.container_secondary_menu .menu_active {
+    opacity: 100%;
+    transition: 0.4s;
+    
+}
+@media only screen and (max-width: 480px) {
+    
+    .container_menu {
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .container_menu img {
+        width: 30vw;
+        height: 10vh;
+    }
+    .container_secondary_menu {
+        width: 100%;
+    }
+    .container_secondary_menu div {
+        flex-direction: column;
+        height: 75vh;
+        width: 100%;
+        background-color: grey;
+        position: absolute;
+        z-index: 1;
+        /* transform: translateX(100%); */
+        transition: transform 0.5s ease-in;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .container_menu .burger div {
+        display: block;
+    }
+    .container_header_jumbotron {
+        width: 100%;
+        height: auto;
+    }
+    .container_header_jumbotron .container_jumbotron {
+        height: 50vh;
+        
+    }
+    .container_header_jumbotron .container_card_jumbotron {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        gap: 10px;
+        margin: 5% 0;
+    }
+    .container_header_jumbotron .container_card_jumbotron .card {
+        width: 65%;
+        height: 45vh;
+    }
+    .container_content {
+        margin-top: 10%;
+    }
+    .container_content .container_kopikukaukita {
+        
+    }
+    .container_content .container_both_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_content .container_both_content .container_left_content {
+        width: 100%;
+        text-align: center;
+    }
+    .container_content .container_both_content .container_left_content h1 {
+        font-size: 30px;
+    }
+    .container_both_content .container_left_content .content .desc_content_1 {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+        box-sizing: border-box;
+    }
+    .container_both_content .container_right_content {
+        width: 100%;
+    }
+    .carousel_container {
+
+    }
+    .carousel_container i {
+        font-size: 15px;
+        background-color: white;
+        color: grey;
+    }
+    #nextBtn {
+        top: 55%;
+        right: 3%;
+    }
+    #prevBtn {
+        top: 55%;
+        left: 3%;
+    }
+    .carousel_container .carousel_slider {
+
+    }
+    .carousel_slider .img .content {
+        width: 30%;
+        height: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+    .carousel_slider .img .content h3 {
+        margin-top: 5px;
+    }
+    .container_hubkami {
+        flex-direction: column;
+        height: auto;
+    }
+    .container_hubkami .container_image {
+        width: 100%;
+    }
+    .container_hubkami .container_desc {
+        text-align: center;
+    }
+    .container_hubkami h1 {
+        font-size: 25px;
+    }
+    .container_hubkami h2 {
+        font-size: 20px;
+    }
+    .container_hubkami h3 {
+        font-size: 15px;
+    }
+}
