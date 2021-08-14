@@ -239,11 +239,15 @@ a {
     margin-top: 5%;
 }
 .container_secondary_menu .menu_active {
-    opacity: 100%;
+    display: flex;
     transition: 0.4s;
     
 }
 @media only screen and (max-width: 480px) {
+    .container_header_jumbotron {
+        padding: 0;
+        margin: 5% auto;
+    }
     .container_header_jumbotron .container_jumbotron {
         background-position-x: 45%;
     }
@@ -269,7 +273,7 @@ a {
         z-index: 1;
         /* transform: translateX(100%); */
         transition: transform 0.5s ease-in;
-        opacity: 0;
+        display: none;
         transition: 0.4s;
     }
     .container_menu .burger div {

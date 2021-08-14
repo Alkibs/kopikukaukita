@@ -15,14 +15,31 @@ a {
 }
 .container_menu {
     width: 100%;
-    height: 10vh;
+    height: auto;
     background-color: gainsboro;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1% 0;
+    box-sizing: border-box;
     
 }
+.container_menu img {
+    display: block;
+    width: 20vw;
+    height: 15vh;
+}
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    display: none;
+}
 .container_secondary_menu {
+    width: 100%;
+}
+.container_secondary_menu div{
     width: 100%;
     height: 7vh;
     display: flex;
@@ -164,4 +181,87 @@ a {
     width: 100%;
     height: 15vh;
     background-color: gainsboro;
+}
+.container_menu {
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container_secondary_menu .menu_active {
+    display: flex;
+    transition: 1s;
+    opacity: 100%;
+    
+}
+@media only screen and (max-width: 480px) {
+    .container_menu img {
+        width: 32vw;
+        height: 8vh;
+    }
+    .container_secondary_menu {
+        width: 100%;
+    }
+    .container_secondary_menu div {
+        flex-direction: column;
+        height: 75vh;
+        width: 100%;
+        background-color: grey;
+        position: absolute;
+        z-index: 1;
+        /* transform: translateX(100%); */
+        transition: transform 0.5s ease-in;
+        display: none;
+        opacity: 0;
+        transition: 1s;
+        z-index: 4;
+    }
+    .container_menu .burger div {
+        display: block;
+    }
+    .carousel_container {
+        margin: 5% auto ;
+        width: 100%;
+    }
+    .carousel_container i {
+        font-size: 20px;
+               
+    }
+    .carousel_container .carousel_slider .img img {
+        height: 45vh;
+    }
+    .carousel_container .carousel_slider h2 {
+        font-size: 15px;
+    }
+    .container_content .container_topview {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .container_topview .view {
+        width: 75%;
+        height: 50vh;
+    }
+    .container_content .container_both_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_content .container_both_content .container_left_content {
+        width: 100%;
+        text-align: center;
+    }
+    .container_content .container_both_content .container_left_content h1 {
+        font-size: 30px;
+    }
+    .container_both_content .container_left_content .content .desc_content_1 {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+        box-sizing: border-box;
+    }
+    .container_both_content .container_right_content {
+        width: 100%;
+    }
+
 }

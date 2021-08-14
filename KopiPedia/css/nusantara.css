@@ -178,7 +178,7 @@ a {
     background-color: gainsboro;
 }
 .container_secondary_menu .menu_active {
-    opacity: 100%;
+    display: flex;
     transition: 0.4s;
     
 }
@@ -204,7 +204,7 @@ a {
         z-index: 1;
         /* transform: translateX(100%); */
         transition: transform 0.5s ease-in;
-        opacity: 0;
+        display: none;
         transition: 0.4s;
     }
     .container_menu .burger div {
@@ -221,6 +221,9 @@ a {
     .container_jumbotron img {
         width: 100%;
         height: 25vh;
+    }
+    .carousel_container {
+        width: 100%;
     }
     .carousel_container i {
         font-size: 20px;
